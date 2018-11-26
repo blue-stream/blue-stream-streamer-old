@@ -1,7 +1,7 @@
 {
-  "name": "blue-stream-template",
+  "name": "blue-stream-streamer",
   "version": "0.0.0",
-  "description": "Blue Stream micro-service template for future services",
+  "description": "Blue Stream micro-service streamer for streaming videos from local storage or S3",
   "main": "index.js",
   "scripts": {
     "start": "tsc && node ./dist/index.js",
@@ -13,7 +13,7 @@
     "coverage-test": "cross-env NODE_ENV=test nyc check-coverage --lines 95 --functions 95 --branches 95",
     "tslint": "tslint -c tslint.json -p tsconfig.json"
   },
-  "author": "Ron Borysovski, Almog Vagman, Saar Mornel & Yonatan Tal",
+  "author": "Yuval Assa",
   "license": "ISC",
   "devDependencies": {
     "@types/amqplib": "^0.5.9",
@@ -42,14 +42,13 @@
     "typescript": "^2.9.2"
   },
   "dependencies": {
-    "amqplib": "^0.5.2",
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "helmet": "^3.14.0",
     "llamajs": "^0.2.0",
-    "mongoose": "^5.3.8",
     "morgan": "^1.9.1",
     "passport": "^0.4.0",
-    "passport-jwt": "^4.0.0"
+    "passport-jwt": "^4.0.0",
+    "aws-sdk": "^2.243.1"
   }
 }
