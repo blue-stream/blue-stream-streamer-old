@@ -4,7 +4,7 @@ import { StreamerValidator } from './streamer.validator';
 import { ValidRequestMocks, responseMock } from './streamer.mocks';
 import { PropertyInvalidError, IdInvalidError } from '../../utils/errors/userErrors';
 
-describe('Streamer Validator Middleware', function () {
+/*describe('Streamer Validator Middleware', function () {
     describe('Create Validator', function () {
         context('When valid arguments are passed', function () {
             it('Should not throw an error', function () {
@@ -317,3 +317,4 @@ describe('Streamer Validator Middleware', function () {
         });
     });
 });
+*/

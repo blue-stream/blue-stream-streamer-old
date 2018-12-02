@@ -1,0 +1,10 @@
+# streamer microservice
+  streamer-service:
+    build: ../blue-stream-streamer
+    ports:
+      - "5003:3000"
+    env_file:
+      - ./env/node.env
+      - ./env/rabbitmq.env
+      - ./env/s3.env
+    restart: always
