@@ -1,11 +1,10 @@
 import { Types } from 'mongoose';
 
 export class StreamerValidatons {
-    static isPropertyValid(property: string): boolean {
-        return (!!property && property.length < 10);
+    static isVideoIdValid(id: string): boolean {
+        return (id.length < 1024);
     }
 
-    static isIdValid(id: string): boolean {
-        return (!!id && Types.ObjectId.isValid(id));
-    }
+    // static isPreviewValid(id: string): boolean {}
+    // static isThumbnailValid(id: string): boolean {}
 }

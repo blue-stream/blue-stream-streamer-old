@@ -25,9 +25,9 @@ process.on('SIGINT', async () => {
 });
 
 (async () => {
-    
-    Logger.configure();
-    Logger.log(syslogSeverityLevels.Informational, 'Server Started', `Port: ${config.server.port}`);
+
+    //Logger.configure();
+    //Logger.log(syslogSeverityLevels.Informational, 'Server Started', `Port: ${config.server.port}`);
     console.log('Starting server');
     const server: Server = Server.bootstrap();
 
